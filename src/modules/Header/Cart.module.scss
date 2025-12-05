@@ -1,0 +1,100 @@
+.cartContainer {
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  box-shadow: 0 2px 8px 0 rgba(33, 37, 41, 0.08);
+  border-radius: 24px;
+  padding: 15px;
+  position: fixed;
+  right: 10px;
+  top: 80px;
+  background-color: #fff;
+  z-index: 100;
+}
+.cartItem {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 84px;
+    width: calc(100% - 84px);
+    height: 1px;
+    background-color: rgb(222, 226, 230);
+  }
+  img {
+    width: 64px;
+    height: 64px;
+    margin-right: 20px;
+  }
+}
+.cartItemDetails {
+  flex: 1;
+}
+.addBlock {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  button {
+    border: none;
+    border-radius: 10px;
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}
+.iconMinus {
+  background-image: url('../../assets/img/minus-button-normal.svg');
+  width: 30px;
+  height: 30px;
+  &:hover {
+    background-image: url('../../assets/img/minus-button.svg');
+  }
+}
+.iconPlus {
+  background-image: url('../../assets/img/plus-button-normal.svg');
+  width: 30px;
+  height: 30px;
+  &:hover {
+    background-image: url('../../assets/img/plus-button.svg');
+  }
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+  span {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+.cartEmpty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  padding: 24px;
+  img {
+    width: 118px;
+    height: 107px;
+    margin-bottom: 24px;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #868e96;
+  }
+}
+
+.addBlock button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}

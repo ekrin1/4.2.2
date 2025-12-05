@@ -1,0 +1,96 @@
+.card {
+  width: 302px;
+  height: 414px;
+  border-radius: 24px;
+  background-color: #fff;
+  padding: 15px;
+  &:hover {
+    box-shadow: 0 2px 8px 0 rgba(33, 37, 41, 0.08);
+  }
+}
+.cardMain {
+  display: flex;
+  justify-content: space-between;
+  h4 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+.addBlock {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  button {
+    border: none;
+    border-radius: 10px;
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}
+.iconMinus {
+  background-image: url('../../assets/img/minus-button-normal.svg');
+  width: 30px;
+  height: 30px;
+  &:hover {
+    background-image: url('../../assets/img/minus-button.svg');
+  }
+}
+.iconPlus {
+  background-image: url('../../assets/img/plus-button-normal.svg');
+  width: 30px;
+  height: 30px;
+  &:hover {
+    background-image: url('../../assets/img/plus-button.svg');
+  }
+}
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.cardButton {
+  Button {
+    padding: 10px 40px;
+    border-radius: 10px;
+  }
+  &:hover {
+    background-color: #d6f0dc;
+    border-radius: 10px;
+  }
+  img {
+    margin-left: 10px;
+    color: rgb(59, 148, 78);
+  }
+  span {
+    color: rgb(59, 148, 78);
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+.cardLoader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 276px;
+  background-color: #f3f5fa;
+  border-radius: 10px;
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.addBlock button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
