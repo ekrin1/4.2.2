@@ -21,7 +21,7 @@ export default function Header() {
             Vegetable{' '}
             <a href="">
               <img
-                src='src/assets/img/logo.svg'
+                src='./assets/img/logo.svg'
                 alt="Logo"
               />
             </a>
@@ -46,7 +46,7 @@ export default function Header() {
             </Badge>
             <span>Cart</span>
             <img
-              src='src/assets/img/cart.svg'
+              src='./assets/img/cart.svg'
               alt="Cart"
             />
           </Button>
